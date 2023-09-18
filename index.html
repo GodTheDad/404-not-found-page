@@ -24,23 +24,44 @@
     <title>404 Page</title>
 
     <style>
+      body {
+        background-color: rgb(252, 252, 241);
+      }
       div.main{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 100vh;
+        width: 100vw;
+      }
+      div.mainbox{
+        display: inline-flex;
+        width: 50%;
+        height: auto;
+      }
+      div.Errortitle{
+        padding: 70px 0;
+        width: 50%;
+      }
+      img{
+       padding-top: 30px;
+      }
+      button{
+        width: 150px;
+        height: 60px;
+        background-color: black;
+        color:rgb(252, 252, 241) ;
       }
     </style>
   </head>
   <body>
     <div class="main">
       <div class="mainbox">
-        <div id = "Errortitle">
+        <img src="/images/Scarecrow.png" height="75%" width="50%">
+        <div class= "Errortitle">
           <h1>I HAVE BAD NEWS FOR YOU</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nemo delectus similique praesentium aperiam. Voluptatum!</p>
-        </div>
-        <div id="Errorimage">
-
+          <button>Back to homepage</button>
         </div>
       </div>
     </div>
